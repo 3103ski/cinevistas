@@ -10,7 +10,7 @@ import pic5 from '../assets/images/pic05.jpg';
 import pic6 from '../assets/images/pic06.jpg';
 import pic7 from '../assets/images/pic07.jpg';
 import video from '../assets/video/video.mp4';
-import logo from '../assets/images/LOGO-WHITE.png';
+import logo from '../assets/images/color-cinevistas.png';
 
 const IndexPage = () => (
   <Layout>
@@ -34,12 +34,12 @@ const IndexPage = () => (
       </div>
     </section>
 
-    <section id="banner">
+    {/* <section id="banner">
       <div className="inner">
         <h2>The Next Standard</h2>
         <p>Bringing you a new way to capture your audience</p>
       </div>
-    </section>
+    </section> */}
 
     <section id="wrapper">
       <section id="one" className="wrapper spotlight style1">
