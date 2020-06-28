@@ -7,8 +7,7 @@
     "url": "git+https://github.com/anubhavsrivastava/gatsby-starter-solidstate.git"
   },
   "author": {
-    "name": "Anubhav Srivastava",
-    "email": "anubhav.srivastava00@gmail.com"
+    "name": "Bryan Jastrzembski"
   },
   "dependencies": {
     "gatsby": "^2.20.2",

@@ -14,7 +14,6 @@ import pic6 from '../assets/images/champ-motor-thumb.png';
 import pic7 from '../assets/images/pic07.jpg';
 
 // Company Assets
-import video from '../assets/video/video.mp4';
 import logo from '../assets/images/color-cinevistas.png';
 
 const IndexPage = () => (
