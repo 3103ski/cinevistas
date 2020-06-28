@@ -10,9 +10,7 @@ import pic5 from '../assets/images/pic05.jpg';
 import pic6 from '../assets/images/pic06.jpg';
 import pic7 from '../assets/images/pic07.jpg';
 import video from '../assets/video/video.mp4';
-import logo from '../assets/images/logo-banner.png';
-
-import config from '../../config';
+import logo from '../assets/images/LOGO-WHITE.png';
 
 const IndexPage = () => (
   <Layout>
@@ -24,7 +22,15 @@ const IndexPage = () => (
           <h1>Interactive Virtual Tours</h1>
           <h2>FOR RETAIL, COMMERCIAL BUSINESSESS, AND REAL ESTATE</h2>
         </div>
-        <video src={video} type="video/mp4" muted autoPlay loop></video>
+        <main>
+          <iframe
+            src="https://player.vimeo.com/video/433063711?background=1"
+            frameborder="0"
+            allow="accelerometer; autoplay; loop; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+            styles="--aspect-ratio: 333 / 640;"
+          ></iframe>
+        </main>
       </div>
     </section>
 
