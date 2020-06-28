@@ -2,26 +2,31 @@ import React from 'react';
 
 import Layout from '../components/Layout';
 
+// Circle Images
 import pic1 from '../assets/images/pic01.jpg';
 import pic2 from '../assets/images/pic02.jpg';
 import pic3 from '../assets/images/pic03.jpg';
-import pic4 from '../assets/images/pic04.jpg';
-import pic5 from '../assets/images/pic05.jpg';
-import pic6 from '../assets/images/pic06.jpg';
+
+// Article Image
+import pic4 from '../assets/images/laser-eye-thumb.png';
+import pic5 from '../assets/images/champ-porsche-thumb.png';
+import pic6 from '../assets/images/champ-motor-thumb.png';
 import pic7 from '../assets/images/pic07.jpg';
+
+// Company Assets
 import video from '../assets/video/video.mp4';
 import logo from '../assets/images/color-cinevistas.png';
 
 const IndexPage = () => (
   <Layout>
-    <section>
+    <section id="wrapper">
       <div className="video-container">
         <div className="video-overlay">
           <img src={logo} alt="" />
-          <div className="divider"></div>
           <h1>Interactive Virtual Tours</h1>
           <h2>FOR RETAIL, COMMERCIAL BUSINESSESS, AND REAL ESTATE</h2>
         </div>
+
         <main>
           <iframe
             src="https://player.vimeo.com/video/433063711?background=1"
@@ -32,16 +37,7 @@ const IndexPage = () => (
           ></iframe>
         </main>
       </div>
-    </section>
 
-    {/* <section id="banner">
-      <div className="inner">
-        <h2>The Next Standard</h2>
-        <p>Bringing you a new way to capture your audience</p>
-      </div>
-    </section> */}
-
-    <section id="wrapper">
       <section id="one" className="wrapper spotlight style1">
         <div className="inner">
           <a href="/#" className="image">
@@ -110,15 +106,18 @@ const IndexPage = () => (
             Don't take our word for it. Explore some of the work we've done and
             explore the potential of what we bring to the table
           </p>
+
+          {/* Feature Tours */}
           <section className="features">
             <article>
               <a href="/#" className="image">
                 <img src={pic4} alt="" />
               </a>
-              <h3 className="major">Sed feugiat lorem</h3>
+              <h3 className="major">MILLENNIUM LASER EYE CENTER</h3>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id
-                nulla dignissim dapibus ultrices.
+                Dr. Cory M. Lessner and the professional Team at Millennium
+                Laser Eye Centers are recognized as the LASIK Leader in the
+                United States.
               </p>
               <a href="/#" className="special">
                 Learn more
@@ -129,10 +128,11 @@ const IndexPage = () => (
               <a href="/#" className="image">
                 <img src={pic5} alt="" />
               </a>
-              <h3 className="major">Nisl placerat</h3>
+              <h3 className="major">CHAMPION PORSCHE</h3>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id
-                nulla dignissim dapibus ultrices.
+                With more than 85 years of designing and racing experience, the
+                German manufacturer has become an icon in the automotive
+                industry.
               </p>
               <a href="/#" className="special">
                 Learn more
@@ -143,7 +143,7 @@ const IndexPage = () => (
               <a href="/#" className="image">
                 <img src={pic6} alt="" />
               </a>
-              <h3 className="major">Ante fermentum</h3>
+              <h3 className="major">CHAMPION MOTORSPORT</h3>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id
                 nulla dignissim dapibus ultrices.
