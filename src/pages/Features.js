@@ -65,7 +65,7 @@ const FeaturesPage = () => {
                 </div>
             </div>
 
-            <SpyNav sections={scrollSpySections}></SpyNav>
+            <SpyNav sections={scrollSpySections} features={features}></SpyNav>
         </div>
     );
 };

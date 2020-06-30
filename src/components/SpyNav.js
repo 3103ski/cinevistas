@@ -28,7 +28,18 @@ const SpyNav = props => {
                 <h1 href="#section-0">Features</h1>
                 <div className="navDivider"></div>
             </div>
-            <li>
+            {props.features.map((feature, i) => {
+                let id = `"#section-${i + 1}"`;
+                console.log(props.features);
+                return (
+                    <li>
+                        <a className="spyNav" href={id}>
+                            {feature[1].title}
+                        </a>
+                    </li>
+                );
+            })}
+            {/* <li>
                 <a className="spyNav" href="#section-1">
                     VIRTUAL 360 TOUR
                 </a>
@@ -92,7 +103,7 @@ const SpyNav = props => {
                 <a className="spyNav" href="#section-13">
                     GOOGLE STREET VIEW
                 </a>
-            </li>
+            </li> */}
             <li>
                 <a className="spyNav" href="#section-14">
                     CONTACT US
