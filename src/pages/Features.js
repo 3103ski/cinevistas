@@ -48,7 +48,8 @@ const FeaturesPage = () => {
                     let id = `section-${i + 1}`;
                     let f = feature[1];
                     return (
-                        // Don't move to VidFeatures Component. SpyNav must see this section divs rendered here.
+                        // Don't move to VidFeatures Component.
+                        // SpyNav must see this section divs rendered here.
                         <div className="section" id={id} key={i}>
                             <VidFeatures
                                 title={f.title}

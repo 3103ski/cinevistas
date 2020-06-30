@@ -60,5 +60,15 @@
         }
     },
     "portfolioPage": {},
-    "homePage": {}
+    "homePage": {
+        "videos": {
+            "header": "https://player.vimeo.com/video/433861292?background=1"
+        },
+        "content": {
+            "section1": {
+                "header": "interactive virtural tours",
+                "sub": "FOR RETAIL, COMMERCIAL BUSINESSESS, AND REAL ESTATE"
+            }
+        }
+    }
 }
