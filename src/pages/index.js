@@ -1,5 +1,7 @@
+// Library/Framework
 import React from 'react';
 
+// Component Imports
 import Layout from '../components/Layout';
 
 // Circle Images
@@ -51,9 +53,6 @@ const IndexPage = () => (
                             make sure that we provide a virutal experience to
                             live up to what you provide in person.
                         </p>
-                        {/* <a href="/#" className="special">
-              Learn more
-            </a> */}
                     </div>
                 </div>
             </section>
@@ -70,9 +69,6 @@ const IndexPage = () => (
                             people to visit your location, give them an
                             experience before they ever leave the house.
                         </p>
-                        {/* <a href="/#" className="special">
-              Learn more
-            </a> */}
                     </div>
                 </div>
             </section>
@@ -154,7 +150,7 @@ const IndexPage = () => (
                                 adipiscing vehicula id nulla dignissim dapibus
                                 ultrices.
                             </p>
-                            <a href="/#" className="special">
+                            <a href="/Features" className="special">
                                 Learn more
                             </a>
                         </article>

@@ -1,3 +1,7 @@
+$accent-color-one: #a1286bbd;
+
+$hover-transition-speed: 0.1s;
+
 #menu .links li a {
     width: 100%;
 }
@@ -8,6 +12,19 @@
         left: 20px;
         width: 300px;
         border: none;
+    }
+
+    .navTitle {
+        width: 100%;
+        h1 {
+            margin: 0 auto 0 10%;
+        }
+        .navDivider {
+            width: 25%;
+            height: 10px;
+            margin: 0 auto 20px 12%;
+            background-color: $accent-color-one;
+        }
     }
 
     .logo {
@@ -21,7 +38,7 @@
         height: 2.7rem;
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: left;
         margin: 0 auto;
         padding: 0;
     }
@@ -32,16 +49,25 @@
         letter-spacing: 1px;
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: left;
         border: none;
+        padding-left: 10%;
+        width: 100%;
+        height: 100%;
+        transition: $hover-transition-speed;
     }
 
     .is-current a {
         background-color: white;
         color: black;
-        width: 100%;
-        height: 100%;
+
         border-radius: 2px;
+    }
+    .spyNav:hover {
+        color: $accent-color-one !important;
+        letter-spacing: 2px;
+        transition: $hover-transition-speed;
+        padding-left: calc(10% + 2px);
     }
 
     //  Main Section Styling
@@ -52,12 +78,7 @@
         overflow: scroll;
         scroll-snap-type: y mandatory;
         background: rgb(29, 25, 96);
-        background: linear-gradient(
-            90deg,
-            rgba(29, 25, 96, 1) 0%,
-            rgba(43, 43, 205, 1) 34%,
-            rgba(26, 164, 193, 1) 100%
-        );
+        background: linear-gradient(to right, #212d5a, #415083 55.88%, #6172ae);
 
         .section {
             height: 100vh;
@@ -71,7 +92,7 @@
             .topLine {
                 height: 15px;
                 width: 100px;
-                background-color: #a1286bbd;
+                background-color: $accent-color-one;
             }
 
             h1 {
@@ -116,25 +137,6 @@
                 display: flex;
                 align-content: center;
                 align-items: center;
-
-                // .topLine {
-                //     height: 15px;
-                //     width: 100px;
-                //     background-color: #a1286bbd;
-                // }
-
-                // h1 {
-                //     font-size: 2rem;
-                //     line-height: 2rem;
-                //     letter-spacing: 4px;
-                //     margin: 0.65rem 0 0.85rem 0;
-                // }
-
-                // p {
-                //     font-size: 1.2rem;
-                //     line-height: 1.6rem;
-                //     text-align: justify;
-                // }
 
                 .feature-txt {
                     width: 40%;
