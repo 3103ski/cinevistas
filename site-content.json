@@ -93,21 +93,21 @@
                 "title": "millennium eye center",
                 "vidUrl": "https://player.vimeo.com/video/433868601?background=1",
                 "projectUrl": "http://cinevistatours.com/mlec/",
-                "template": "videoTwo"
+                "template": "textOne"
             },
             "championPorsche": {
                 "text": "With more than 85 years of designing and racing experience, the German manufacturer has become an icon in the automotive industry.",
                 "title": "champion porsche",
                 "vidUrl": "https://player.vimeo.com/video/433868601?background=1",
                 "projectUrl": "http://cinevistatours.com/champion-porsche/",
-                "template": "videoTwo"
+                "template": "textOne"
             },
             "championMotorsport": {
                 "text": "Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus ultrices.",
                 "title": "champion motorsport",
                 "vidUrl": "https://player.vimeo.com/video/433868601?background=1",
                 "projectUrl": "http://cinevistatours.com/champion-motorsport/",
-                "template": "videoTwo"
+                "template": "textOne"
             }
         },
         "greetings": {
