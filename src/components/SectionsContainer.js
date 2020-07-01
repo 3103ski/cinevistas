@@ -1,5 +1,6 @@
 import React from 'react';
 import Layout from '../components/Layout';
+import downIcon from '../assets/images/down-arrow.svg';
 
 // TO
 const SectionsContainer = props => {
@@ -37,6 +38,7 @@ const SectionsContainer = props => {
                         <p>{greetP}</p>
                     </div>
                 </div>
+                <img className="downArrow" src={downIcon}></img>
             </div>
             {/* Children should be Section Component that iterates content packages from JSON */}
             {props.children}

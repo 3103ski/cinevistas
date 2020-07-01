@@ -1,8 +1,24 @@
 $accent-color-one: #a1286bbd;
-$scroll-spy-width: 21.8rem;
+$scroll-spy-width: 18rem;
 $scroll-spy-side-padding: 9%;
+$scroll-spy-font-size: 1.25rem;
+$scroll-spy-letter-space: 0.05rem;
+
 $container-width: calc(100vw - #{$scroll-spy-width});
 $hover-transition-speed: 0.1s;
+
+$greet-arrow-animation: fadeOutUp;
+
+@keyframes fadeOutUp {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+        transform: translate3d(0, -50%, 0);
+    }
+}
 
 .scrollSpyPage {
     .logo,
@@ -34,7 +50,6 @@ $hover-transition-speed: 0.1s;
 
     .navUl ul {
         width: $scroll-spy-width;
-        // min-width: 21rem;
         position: fixed;
         right: 0;
         height: 100vh;
@@ -42,7 +57,7 @@ $hover-transition-speed: 0.1s;
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 6rem 0px 0px 0px;
+        padding: 4.75rem 0px 0px 0px;
     }
     li {
         list-style-type: none;
@@ -63,24 +78,26 @@ $hover-transition-speed: 0.1s;
 
     .spyNav {
         color: white;
-        font-size: 1.25rem;
-        line-height: 1.5rem;
+        font-size: $scroll-spy-font-size;
+        line-height: calc(#{$scroll-spy-font-size} + 0.15rem);
         font-weight: 200;
-        letter-spacing: 0.05rem;
+        letter-spacing: $scroll-spy-letter-space;
         display: flex;
         align-items: center;
         justify-content: left;
         border: none;
-        padding: 0.6rem $scroll-spy-side-padding;
+        padding: 0.2rem $scroll-spy-side-padding;
         width: 100%;
         transition: $hover-transition-speed;
+        transition-timing-function: ease-out;
         text-transform: uppercase;
 
         &:hover {
             color: $accent-color-one !important;
-            letter-spacing: 2px;
+            letter-spacing: calc(#{$scroll-spy-letter-space} + 0.035rem);
             transition: $hover-transition-speed;
-            padding-left: calc(#{$scroll-spy-side-padding} - 0.5rem);
+            transition-timing-function: ease-out;
+            padding-left: calc(#{$scroll-spy-side-padding} - 0.2rem);
         }
     }
 
@@ -88,6 +105,10 @@ $hover-transition-speed: 0.1s;
         background-color: white;
         color: black;
         border-radius: 2px;
+        font-size: calc(#{$scroll-spy-font-size} + 0.15rem);
+        transition: $hover-transition-speed;
+        padding: 0.7rem $scroll-spy-side-padding;
+        transition-timing-function: ease-out;
     }
 
     //  Main Section Styling
@@ -111,6 +132,20 @@ $hover-transition-speed: 0.1s;
             align-items: center;
             justify-content: center;
             scroll-snap-align: start;
+
+            .downArrow {
+                width: 40px;
+                display: inline-block;
+                margin: 0rem auto;
+                animation-name: fadeOutUp;
+                transform-origin: center bottom;
+                animation-duration: 0.9s;
+                animation-iteration-count: infinite;
+                animation-direction: alternate;
+                opacity: 0.5;
+                position: absolute;
+                bottom: 20px;
+            }
 
             .topLine {
                 height: 15px;
@@ -150,7 +185,6 @@ $hover-transition-speed: 0.1s;
                 .greeting-txt {
                     z-index: 2;
                     position: relative;
-                    // background-color: white;
                 }
             }
 

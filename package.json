@@ -10,6 +10,7 @@
     "name": "Bryan Jastrzembski"
   },
   "dependencies": {
+    "animate.css": "^4.1.0",
     "gatsby": "^2.20.2",
     "gatsby-background-image": "^1.1.1",
     "gatsby-plugin-manifest": "^2.3.1",

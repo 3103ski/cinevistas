@@ -1,8 +1,8 @@
 // Framework / Library
 import React from 'react';
-
-// Import Components
+// Components
 import VimeoVid from './VimeoEmbed';
+// Assets
 
 const FeatureVideoCard = props => (
     <div className="feature-card">
