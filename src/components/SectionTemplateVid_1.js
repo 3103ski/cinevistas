@@ -4,7 +4,7 @@ import React from 'react';
 import VimeoVid from './VimeoEmbed';
 // Assets
 
-const FeatureVideoCard = props => (
+const SectionWithVidTemplate = props => (
     <div className="feature-card">
         <div className="feature-txt">
             <div className="topLine"></div>
@@ -18,4 +18,4 @@ const FeatureVideoCard = props => (
     </div>
 );
 
-export default FeatureVideoCard;
+export default SectionWithVidTemplate;
