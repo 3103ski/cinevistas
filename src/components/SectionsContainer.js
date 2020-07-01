@@ -1,6 +1,7 @@
 import React from 'react';
 import Layout from '../components/Layout';
 
+// TO
 const SectionsContainer = props => {
     const greetings = props.pageContent.greetings
         ? props.pageContent.greetings
