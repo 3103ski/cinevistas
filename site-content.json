@@ -8,67 +8,80 @@
             "virtual360Tours": {
                 "text": "Allow your customers to take a completely interactive tour through your entire location. They can browse and purchase products, learn about services, and get a feel what your place feels like. Our Vista Tours are fully immersive and can contain any and all information about your business or location as you'd like.",
                 "title": "virtual 360 tours",
-                "vidUrl": "https://player.vimeo.com/video/433868601?background=1"
+                "vidUrl": "https://player.vimeo.com/video/433868601?background=1",
+                "template": "videoOne"
             },
             "tourHotspots": {
                 "text": "Hot spots allow you to have clickable areas in your tour. These clickable areas can have any icon or picture you’d like. They enable customers to click on a product to display a pop that gives them information, pictures and even video about that particular product. This is useful if you’d like your customers to shop within your tour. Hotspots can also open up a photo album, video or an external link to your website or anywhere else you choose.",
                 "title": "tour hotspots",
-                "vidUrl": "https://player.vimeo.com/video/433876787?background=1"
+                "vidUrl": "https://player.vimeo.com/video/433876787?background=1",
+                "template": "videoOne"
             },
             "audioVideo": {
                 "text": "Allow your customers to take a completely interactive tour through your entire location. They can browse and purchase products, learn about services, and get a feel what your place feels like. Our Vista Tours are fully immersive and can contain any and all information about your business or location as you'd like.",
                 "title": "audio & video",
-                "vidUrl": "https://player.vimeo.com/video/433868601?background=1"
+                "vidUrl": "https://player.vimeo.com/video/433868601?background=1",
+                "template": "videoOne"
             },
             "timelapse360": {
                 "text": "We can create 360 timelapse videos.",
                 "title": "360 timelapse",
-                "vidUrl": "https://player.vimeo.com/video/433868601?background=1"
+                "vidUrl": "https://player.vimeo.com/video/433868601?background=1",
+                "template": "videoOne"
             },
             "video360": {
                 "text": "Want a video tour of your location? How about a 360 Video that customers can use VR Goggles or click to move the camera angle as the video plays? We can also embed this 360 video within your tour",
                 "title": "360 video",
-                "vidUrl": "https://player.vimeo.com/video/433868601?background=1"
+                "vidUrl": "https://player.vimeo.com/video/433868601?background=1",
+                "template": "videoOne"
             },
             "videoHotspots360": {
                 "text": "Hotspots can also be embedded in 360 video! Useful if we shoot a 360 video for your location. As the guest looks around during the video playing they’ll see onscreen icons that allows them to click and get more information about it.",
                 "title": "360 video hotspots",
-                "vidUrl": "https://player.vimeo.com/video/433868601?background=1"
+                "vidUrl": "https://player.vimeo.com/video/433868601?background=1",
+                "template": "videoOne"
             },
             "fullyBranded": {
                 "text": "Your Tour will come fully branded with your company logo, colors, website link and contact information right inside of it.",
                 "title": "fully branded",
-                "vidUrl": "https://player.vimeo.com/video/433876787?background=1"
+                "vidUrl": "https://player.vimeo.com/video/433876787?background=1",
+                "template": "videoOne"
             },
             "vRReady": {
                 "text": "Our tours are compatible with most VR Goggles like the Oculus Rift and many others.",
                 "title": "vr ready",
-                "vidUrl": "https://player.vimeo.com/video/433868601?background=1"
+                "vidUrl": "https://player.vimeo.com/video/433868601?background=1",
+                "template": "videoOne"
             },
             "offlineOrHosted": {
                 "text": "Want your tour delivered to you on a USB Stick or downloadable? We can send your tour directly to you so you can send it wherever you’d like, or just to have a backup copy. You can also have us host your tour so all you have to do is share a link. This will also allow you to embed your tour directly on your website.",
                 "title": "offline or hosted",
-                "vidUrl": "https://player.vimeo.com/video/433868601?background=1"
+                "vidUrl": "https://player.vimeo.com/video/433868601?background=1",
+                "template": "videoOne"
             },
             "embedExternalContent": {
                 "text": "We can embed a contact form, purchase link, youtube video, google map, and more directly inside your tour. This is the most convenient way to allow your customers to get a full experience right within your tour and interact with your business almost as if they were actually there in person.",
                 "title": "embed external content",
-                "vidUrl": "https://player.vimeo.com/video/433868601?background=1"
+                "vidUrl": "https://player.vimeo.com/video/433868601?background=1",
+                "template": "videoOne"
             },
             "photoAlbum": {
                 "text": "We also can embed a complete photo album within your tour. Let’s say you’d like us to shoot a few picture for a certain product you offer. Customers can click on that product and see all of the high quality photos of that product.",
                 "title": "photo album",
-                "vidUrl": "https://player.vimeo.com/video/433868601?background=1"
+                "vidUrl": "https://player.vimeo.com/video/433868601?background=1",
+                "template": "videoOne"
             },
             "worksOnAllDevices": {
                 "text": "Our tours work on all devices. iPhone, Android, Mac, Windows, iPad, Surface, etc..",
                 "title": "works on all devices",
-                "vidUrl": "https://player.vimeo.com/video/433868601?background=1"
+                "vidUrl": "https://player.vimeo.com/video/433868601?background=1",
+                "template": "videoOne"
             },
             "googleStreetView": {
                 "text": "Your tour can be published directly to Google Street View. integrated with the official information of your Google listing (i.e. phone, address and reviews). Virtual Tours on the point of first contact, which Google tends to be, are the ultimate tool to familiarize the customer with a business. Plus, they also have proven to positively impact indexation and visibility on search platforms, helping you show up among the first.",
                 "title": "google street view",
-                "vidUrl": "https://player.vimeo.com/video/433868601?background=1"
+                "vidUrl": "https://player.vimeo.com/video/433868601?background=1",
+                "template": "videoOne"
             }
         }
     },
@@ -79,19 +92,22 @@
                 "text": "Dr. Cory M. Lessner and the professional Team at Millennium Laser Eye Centers are recognized as the LASIK Leader in the United States.",
                 "title": "millennium eye center",
                 "vidUrl": "https://player.vimeo.com/video/433868601?background=1",
-                "projectUrl": "http://cinevistatours.com/mlec/"
+                "projectUrl": "http://cinevistatours.com/mlec/",
+                "template": "videoOne"
             },
             "championPorsche": {
                 "text": "With more than 85 years of designing and racing experience, the German manufacturer has become an icon in the automotive industry.",
                 "title": "champion porsche",
                 "vidUrl": "https://player.vimeo.com/video/433868601?background=1",
-                "projectUrl": "http://cinevistatours.com/champion-porsche/"
+                "projectUrl": "http://cinevistatours.com/champion-porsche/",
+                "template": "videoOne"
             },
             "championMotorsport": {
                 "text": "Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus ultrices.",
                 "title": "champion motorsport",
                 "vidUrl": "https://player.vimeo.com/video/433868601?background=1",
-                "projectUrl": "http://cinevistatours.com/champion-motorsport/"
+                "projectUrl": "http://cinevistatours.com/champion-motorsport/",
+                "template": "videoOne"
             }
         },
         "greetings": {

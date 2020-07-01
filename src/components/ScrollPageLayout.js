@@ -32,7 +32,7 @@ const FeaturesPage = props => {
                 <Sections sectionData={sectionsArr}></Sections>
             </SectionsContainer>
             <SpyNav
-                navTitle="features"
+                navTitle={pageContent.navTitle}
                 sections={scrollSpySections}
                 features={sectionsArr}
             ></SpyNav>
