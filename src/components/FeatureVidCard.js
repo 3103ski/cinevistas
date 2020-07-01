@@ -13,21 +13,7 @@ const FeatureVideoCard = props => (
         </div>
 
         <div className="feature-vid">
-            {/* <video
-                src={props.video}
-                muted={true}
-                autoPlay={true}
-                loop={true}
-            ></video> */}
-            <VimeoVid vimeoLink="https://player.vimeo.com/video/433868601?background=1"></VimeoVid>
-            {/* <iframe
-                src="https://player.vimeo.com/video/433868601"
-                width="640"
-                height="480"
-                frameborder="0"
-                allow="autoplay; fullscreen"
-                allowfullscreen
-            ></iframe> */}
+            <VimeoVid vimeoLink={props.video}></VimeoVid>
         </div>
     </div>
 );

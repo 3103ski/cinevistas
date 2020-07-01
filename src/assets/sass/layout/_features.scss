@@ -1,10 +1,9 @@
 $accent-color-one: #a1286bbd;
-
+$scroll-spy-width: 21.8rem;
+$scroll-spy-side-padding: 9%;
+$container-width: calc(100vw - #{$scroll-spy-width});
 $hover-transition-speed: 0.1s;
 
-#menu .links li a {
-    width: 100%;
-}
 .scrolling-features {
     .logo,
     .logo img {
@@ -17,6 +16,7 @@ $hover-transition-speed: 0.1s;
     .navTitle {
         width: 100%;
         h1 {
+            font-size: 1.75rem;
             margin: 0 auto 0 10%;
         }
         .navDivider {
@@ -31,52 +31,71 @@ $hover-transition-speed: 0.1s;
         position: absolute;
         z-index: 4;
     }
-    // Side panel
+
+    .navUl ul {
+        width: $scroll-spy-width;
+        // min-width: 21rem;
+        position: fixed;
+        right: 0;
+        height: 100vh;
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 6rem 0px 0px 0px;
+    }
     li {
         list-style-type: none;
         width: 95%;
-        height: 2.7rem;
         display: flex;
         align-items: center;
         justify-content: left;
-        margin: 0 auto;
+        margin: 0.1rem auto;
         padding: 0;
+    }
+
+    .spyNavWrapper {
+        width: $scroll-spy-width;
+        height: 100vh;
+        position: absolute;
+        right: 0;
     }
 
     .spyNav {
         color: white;
-        font-size: 1.2rem;
-        letter-spacing: 1px;
+        font-size: 1.25rem;
+        line-height: 1.5rem;
+        font-weight: 200;
+        letter-spacing: 0.05rem;
         display: flex;
         align-items: center;
         justify-content: left;
         border: none;
-        padding-left: 10%;
+        padding: 0.6rem $scroll-spy-side-padding;
         width: 100%;
-        height: 100%;
         transition: $hover-transition-speed;
         text-transform: uppercase;
+
+        &:hover {
+            color: $accent-color-one !important;
+            letter-spacing: 2px;
+            transition: $hover-transition-speed;
+            padding-left: calc(#{$scroll-spy-side-padding} - 0.5rem);
+        }
     }
 
     .is-current a {
         background-color: white;
         color: black;
-
         border-radius: 2px;
-    }
-    .spyNav:hover {
-        color: $accent-color-one !important;
-        letter-spacing: 2px;
-        transition: $hover-transition-speed;
-        padding-left: calc(10% + 2px);
     }
 
     //  Main Section Styling
-    .section-cont {
+    .sectionCont {
         height: 100vh;
-        width: 85vw;
+        width: $container-width;
+        overflow: hidden scroll;
         position: absolute;
-        overflow: scroll;
         scroll-snap-type: y mandatory;
         background: rgb(29, 25, 96);
         background: linear-gradient(to right, #212d5a, #415083 55.88%, #6172ae);
@@ -108,7 +127,6 @@ $hover-transition-speed: 0.1s;
                 line-height: 1.6rem;
                 text-align: justify;
             }
-
             .greeting-card {
                 height: 100vh;
                 width: 100%;
@@ -118,6 +136,8 @@ $hover-transition-speed: 0.1s;
                 display: flex;
                 align-items: center;
                 justify-content: center;
+                background-image: url('../images/cam-bg.jpg');
+                background-size: cover;
 
                 img {
                     position: absolute;
@@ -149,8 +169,8 @@ $hover-transition-speed: 0.1s;
                     border-radius: 20px;
 
                     video {
-                        border-radius: 5px;
-                        box-shadow: 4px 2px 18px #00000073;
+                        border-radius: 5px !important;
+                        box-shadow: 4px 2px 18px #00000073 !important;
                         width: 100%;
                     }
                 }

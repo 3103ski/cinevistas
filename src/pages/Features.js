@@ -1,14 +1,12 @@
 // Library/Framework
 import React from 'react';
-import Scrollspy from 'react-scrollspy';
+// import Scrollspy from 'react-scrollspy';
 
 // HOC imports
 import Layout from '../components/Layout';
 
 // asset imports
-import vid1 from '../assets/video/video.mp4';
 import logo from '../assets/images/color-cinevistas.png';
-import camBg from '../assets/images/cam-bg.jpg';
 
 // component imports
 import VidFeatures from '../components/FeatureVidCard';
@@ -31,12 +29,11 @@ const FeaturesPage = () => {
     return (
         <div className="scrolling-features">
             <a className="logo" href="/">
-                <img src={logo} alt="" />
+                <img src={logo} alt="logo" />
             </a>
-            <div className="section-cont" id="scrolling-container">
+            <div className="sectionCont" id="scrolling-container">
                 <div className="section" id="section-0">
                     <div className="greeting-card">
-                        <img className={camBg} src={camBg} alt="" />
                         <div className="greeting-txt">
                             <div className="topLine"></div>
                             <h1>{greetings.header}</h1>
@@ -48,13 +45,11 @@ const FeaturesPage = () => {
                     let id = `section-${i + 1}`;
                     let f = feature[1];
                     return (
-                        // Don't move to VidFeatures Component.
-                        // SpyNav must see this section divs rendered here.
                         <div className="section" id={id} key={i}>
                             <VidFeatures
                                 title={f.title}
                                 text={f.text}
-                                video={vid1}
+                                video={f.vidUrl}
                             ></VidFeatures>
                         </div>
                     );
@@ -66,7 +61,11 @@ const FeaturesPage = () => {
                 </div>
             </div>
 
-            <SpyNav sections={scrollSpySections} features={features}></SpyNav>
+            <SpyNav
+                navTitle="features"
+                sections={scrollSpySections}
+                features={features}
+            ></SpyNav>
         </div>
     );
 };

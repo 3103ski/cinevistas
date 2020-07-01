@@ -5,10 +5,10 @@ const VimeoEmbed = props => {
     return (
         <iframe
             src={props.vimeoLink}
-            frameborder="0"
+            frameBorder="0"
             allow="accelerometer; autoplay; loop; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-            styles="--aspect-ratio: 333 / 640;"
+            allowFullScreen
+            styles="--aspect-ratio: 333 / 640; border-radius: 10px;"
         ></iframe>
     );
 };
