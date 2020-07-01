@@ -1,3 +1,9 @@
+// Content JSON in root dir provides each project section with classname matching project object key;
+
+$bg-eye-center: url('../images/bg-eyes.jpg');
+$bg-champ-motor: url('../images/bg-engine.jpg');
+$bg-champ-porsche: url('../images/bg-porsche.jpg');
+
 .scrSp {
     position: relative;
     height: 100vh;
@@ -17,14 +23,15 @@
 .projectsGreet {
     background-image: url('../images/portfolio-greet-bg.jpg');
 }
+
 .millenniumLasyerEyeCenter {
-    background-image: url('../images/laser-center-bg.png');
+    background-image: $bg-eye-center;
 }
 
 .championPorsche {
-    background-image: url('../images/champ-porsche-bg.png');
+    background-image: $bg-champ-porsche;
 }
 
 .championMotorsport {
-    background-image: url('../images/champ-motor-bg.png');
+    background-image: $bg-champ-motor;
 }

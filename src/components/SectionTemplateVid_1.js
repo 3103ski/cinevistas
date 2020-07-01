@@ -2,7 +2,7 @@
 import React from 'react';
 
 // Import Components
-import VimeoVid from '../components/VimeoEmbed';
+import VimeoVid from './VimeoEmbed';
 
 const FeatureVideoCard = props => (
     <div className="feature-card">
