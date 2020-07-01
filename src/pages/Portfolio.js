@@ -6,7 +6,6 @@ import Layout from '../components/Layout';
 
 // asset imports
 import logo from '../assets/images/color-cinevistas.png';
-import camBg from '../assets/images/cam-bg.jpg';
 
 // component imports
 import VidFeatures from '../components/FeatureVidCard';
@@ -33,9 +32,8 @@ const PortfolioPage = () => {
                 <img src={logo} alt="logo" />
             </a>
             <div className="sectionCont" id="scrolling-container">
-                <div className="section" id="section-0">
+                <div className="section projectsGreet" id="section-0">
                     <div className="greeting-card">
-                        <img className={camBg} src={camBg} alt="" />
                         <div className="greeting-txt">
                             <div className="topLine"></div>
                             <h1>{greetings.header}</h1>
@@ -46,8 +44,10 @@ const PortfolioPage = () => {
                 {projects.map((feature, i) => {
                     let id = `section-${i + 1}`;
                     let f = feature[1];
+                    let bgClass = feature[0];
+                    let classes = `section ${bgClass}`;
                     return (
-                        <div className="section" id={id} key={i}>
+                        <div className={classes} id={id} key={i}>
                             <VidFeatures
                                 title={f.title}
                                 text={f.text}

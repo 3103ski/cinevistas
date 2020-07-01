@@ -99,8 +99,11 @@ $hover-transition-speed: 0.1s;
         scroll-snap-type: y mandatory;
         background: rgb(29, 25, 96);
         background: linear-gradient(to right, #212d5a, #415083 55.88%, #6172ae);
-
+        .featureGreet {
+            background-image: url('../images/cam-bg.jpg');
+        }
         .section {
+            background-size: cover;
             height: 100vh;
             width: 100%;
             display: flex;
@@ -127,6 +130,7 @@ $hover-transition-speed: 0.1s;
                 line-height: 1.6rem;
                 text-align: justify;
             }
+
             .greeting-card {
                 height: 100vh;
                 width: 100%;
@@ -136,7 +140,6 @@ $hover-transition-speed: 0.1s;
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                background-image: url('../images/cam-bg.jpg');
                 background-size: cover;
 
                 img {

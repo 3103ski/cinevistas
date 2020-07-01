@@ -32,7 +32,7 @@ const FeaturesPage = () => {
                 <img src={logo} alt="logo" />
             </a>
             <div className="sectionCont" id="scrolling-container">
-                <div className="section" id="section-0">
+                <div className="section featureGreet" id="section-0">
                     <div className="greeting-card">
                         <div className="greeting-txt">
                             <div className="topLine"></div>

@@ -1,9 +1,30 @@
 .scrSp {
-  position: relative;
-  height: 100vh;
-  overflow: scroll;
+    position: relative;
+    height: 100vh;
+    overflow: scroll;
 }
 
 .featSect {
-  height: 100vh;
+    height: 100vh;
+}
+
+.millenniumLasyerEyeCenter,
+.championPorsche,
+.greetSection {
+    background-size: cover;
+}
+
+.projectsGreet {
+    background-image: url('../images/portfolio-greet-bg.jpg');
+}
+.millenniumLasyerEyeCenter {
+    background-image: url('../images/laser-center-bg.png');
+}
+
+.championPorsche {
+    background-image: url('../images/champ-porsche-bg.png');
+}
+
+.championMotorsport {
+    background-image: url('../images/champ-motor-bg.png');
 }
