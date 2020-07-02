@@ -8,7 +8,7 @@ const SpyNav = props => {
                 items={props.sections}
                 currentClassName="is-current"
                 rootEl="#scrolling-container"
-                offset={-250}
+                offset={-240}
             >
                 <div className="navTitle">
                     <h1 href="#section-0">{props.navTitle}</h1>

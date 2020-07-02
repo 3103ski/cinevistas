@@ -1,0 +1,211 @@
+/*
+------------------------------------------------------------------------------
+******************************************************************************
+** STYLING NOTE: Following styling should be template specific. If you create a new
+template, try to make sure you only include classes from within the template component
+in this document. 
+
+AUTOMATIC CLASS ASSIGNMENT: The section object fed to sections component will be given a
+unique classname that is the name of the key for that section object. Use that for new backgrounds or 
+styling specific to JUST that entry like a brand color etc..
+******************************************************************************
+------------------------------------------------------------------------------
+*/
+
+/*
+-----------------------------------------
+*****************************************
+    VARIABLES
+*****************************************
+-----------------------------------------
+*/
+// SECTION BACKGROUNDS
+
+$bg-eye-center: url('../images/bg-eyes.jpg');
+$bg-champ-motor: url('../images/bg-engine.jpg');
+$bg-champ-porsche: url('../images/bg-porsche.jpg');
+$bg-features-greet: url('../images/cam-bg.jpg');
+$bg-portfolio-greet: url('../images/portfolio-greet-bg.jpg');
+
+/*
+-----------------------------------------
+*****************************************
+    UTILITY CLASSES
+*****************************************
+-----------------------------------------
+*/
+
+.light.full {
+    background: rgb(255, 255, 255);
+    background: linear-gradient(
+        150deg,
+        rgba(255, 255, 255, 1) 0%,
+        rgba(232, 232, 232, 0.6068802521008403) 37%,
+        rgba(0, 0, 0, 0) 100%
+    );
+    h1,
+    h2,
+    h3,
+    ul,
+    p {
+        color: rgba(0, 0, 0, 0.8);
+    }
+}
+
+.dark.full {
+    background: rgb(0, 0, 0);
+    background: linear-gradient(
+        150deg,
+        rgba(0, 0, 0, 1) 0%,
+        rgba(0, 0, 0, 0.6068802521008403) 43%,
+        rgba(0, 0, 0, 0) 100%
+    );
+    h1,
+    h2,
+    h3,
+    ul,
+    p {
+        color: rgba(255, 255, 255, 0.8);
+    }
+}
+
+.full {
+    width: 100% !important;
+    height: 100% !important;
+    align-items: unset !important;
+    // If you use this class, be sure to add '.card' with top and left margin to position on page
+    .info-cards-wrapper {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        padding: 8.5rem 0 0 10%;
+        .card {
+            position: relative;
+        }
+    }
+}
+
+.card {
+    width: 40%;
+    p {
+        letter-spacing: 0.025rem;
+    }
+    .visit-btn-container {
+        p {
+            margin: 0 0.6rem 0.1rem 0;
+        }
+        margin-top: 2.3rem;
+        display: flex;
+        height: 2rem;
+        align-items: center;
+
+        a {
+            border: none !important;
+        }
+    }
+}
+
+.card1 {
+    margin-bottom: 1rem;
+    padding: 2rem;
+    p {
+        font-size: 1.5rem !important;
+        font-weight: 500;
+        line-height: 2.3rem !important;
+        margin-right: 1rem !important;
+    }
+    .visit-btn-container {
+        margin-left: 0;
+        .click-out-icon {
+            width: 1.8rem;
+        }
+    }
+}
+
+.card2 {
+    width: 16rem;
+    padding: 1rem 1rem 1rem 2rem;
+    ul {
+        img {
+            width: 1.6rem;
+            margin-right: 0.8rem;
+        }
+        margin: 1rem 0 0.65rem 0;
+        padding: 0;
+        width: 100%;
+    }
+    .visit-btn-container {
+        margin-left: auto;
+        .click-out-icon {
+            width: 1.4rem;
+        }
+    }
+    p {
+        margin-left: auto !important;
+    }
+}
+
+/*
+-----------------------------------------
+*****************************************
+    USER SECTION BACKGROUNDS
+*****************************************
+-----------------------------------------
+*/
+
+// GREETINGS SECTIONS
+.featureGreet {
+    background-image: $bg-features-greet;
+}
+
+.projectsGreet {
+    background-image: $bg-portfolio-greet;
+}
+
+// PORTFOLIO SECTIONS
+
+.millenniumLasyerEyeCenter,
+.championPorsche,
+.greetSection {
+    background-size: cover;
+}
+
+.millenniumLasyerEyeCenter {
+    background-image: $bg-eye-center;
+}
+
+.championPorsche {
+    background-image: $bg-champ-porsche;
+}
+
+.championMotorsport {
+    background-image: $bg-champ-motor;
+}
+
+/*
+-----------------------------------------
+*****************************************
+    SectionTemplateOne.js
+*****************************************
+-----------------------------------------
+*/
+
+.template-one-video {
+    width: 50%;
+    border-radius: 20px;
+    margin: 0 auto;
+
+    video {
+        border-radius: 5px !important;
+        box-shadow: 4px 2px 18px #00000073 !important;
+        width: 100%;
+    }
+}
+
+/*
+-----------------------------------------
+*****************************************
+    SectionTemplateTwo.js
+*****************************************
+-----------------------------------------
+*/

@@ -1,38 +1,45 @@
 import React from 'react';
-import VideoTemplateOne from './SectionTemplateVid_1';
-import TextTemplateOne from './SectionTemplateText_1';
+import TemplateOne from './SectionTemplateOne';
+import TemplateTwo from './SectionTemplateTwo';
 
 const Sections = props => {
+    // store data array of objects fed to props from 'SectionsContainer.js'.
     let data = props.sectionData;
+
+    // loop through data to create a section for each data package in array.
     let sections = data.map((sectionObject, i) => {
         let id = `section-${i + 1}`;
         let data = sectionObject[1];
-        let bgClass = sectionObject[0];
-        let classes = `section ${bgClass}`;
-
+        let sectionName = sectionObject[0];
+        let sectionClasses = `section ${sectionName}`;
+        console.log(data);
         switch (data.template) {
-            case 'videoOne':
+            case 'one':
                 return (
-                    <div className={classes} id={id} key={i}>
-                        <VideoTemplateOne
-                            title={data.title}
-                            text={data.text}
-                            video={data.vidUrl}
+                    <div className={sectionClasses} id={id} key={i}>
+                        <TemplateOne
+                            contentData={data}
+                            // title={data.title}
+                            // text={data.text}
+                            // video={data.vidUrl}
                             id={id}
                             key={i}
-                        ></VideoTemplateOne>
+                            // templateClasses={templateCustomClass}
+                        ></TemplateOne>
                     </div>
                 );
-            case 'textOne':
+            case 'two':
                 return (
-                    <div className={classes} id={id} key={i}>
-                        <TextTemplateOne
-                            title={data.title}
-                            text={data.text}
-                            video={data.vidUrl}
+                    <div className={sectionClasses} id={id} key={i}>
+                        <TemplateTwo
+                            contentData={data}
+                            // title={data.title}
+                            // text={data.text}
+                            // video={data.vidUrl}
                             id={id}
                             key={i}
-                        ></TextTemplateOne>
+                            // templateClasses={templateCustomClass}
+                        ></TemplateTwo>
                     </div>
                 );
         }

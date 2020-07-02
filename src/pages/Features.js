@@ -8,6 +8,7 @@ import siteContent from '../../site-content.json';
 const FeaturesPage = () => {
     const pageContent = siteContent.featuresPage;
     const sectionsArr = Object.entries(siteContent.featuresPage.features);
+    console.log(pageContent);
 
     return (
         <ScrollSpyPage

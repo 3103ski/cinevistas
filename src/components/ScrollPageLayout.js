@@ -7,8 +7,6 @@ import logo from '../assets/images/color-cinevistas.png';
 // Components
 import SpyNav from '../components/SpyNav';
 import Sections from '../components/Sections';
-// Content JSON located in root dir
-// import siteContent from '../../site-content.json';
 
 const FeaturesPage = props => {
     const pageContent = props.content;

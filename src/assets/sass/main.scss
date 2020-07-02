@@ -6,6 +6,7 @@
 @import 'libs/html-grid';
 @import 'font-awesome.min.css';
 @import url('https://fonts.googleapis.com/css?family=Raleway:200,700|Source+Sans+Pro:300,600,300italic,600italic');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 /*
 	Solid State by HTML5 UP
@@ -16,32 +17,32 @@
 // Breakpoints.
 
 @include breakpoints(
-  (
-    xlarge: (
-      1281px,
-      1680px,
-    ),
-    large: (
-      981px,
-      1280px,
-    ),
-    medium: (
-      737px,
-      980px,
-    ),
-    small: (
-      481px,
-      736px,
-    ),
-    xsmall: (
-      361px,
-      480px,
-    ),
-    xxsmall: (
-      null,
-      360px,
-    ),
-  )
+    (
+        xlarge: (
+            1281px,
+            1680px,
+        ),
+        large: (
+            981px,
+            1280px,
+        ),
+        medium: (
+            737px,
+            980px,
+        ),
+        small: (
+            481px,
+            736px,
+        ),
+        xsmall: (
+            361px,
+            480px,
+        ),
+        xxsmall: (
+            null,
+            360px,
+        ),
+    )
 );
 
 // Base.
@@ -75,5 +76,5 @@
 @import 'layout/footer';
 @import 'layout/menu';
 @import 'layout/video';
-@import 'layout/features';
-@import 'layout/portfolio';
+@import 'layout/_sectionTemplates';
+@import 'layout/spyScrollPages';

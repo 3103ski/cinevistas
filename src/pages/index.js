@@ -3,7 +3,8 @@ import React from 'react';
 
 // Component Imports
 import Layout from '../components/Layout';
-import Vimeo from '../components/VimeoEmbed';
+// import Vimeo from '../components/VimeoEmbed';
+import VideoLandingSection from '../components/VideoLanding';
 
 // Circle Images
 import pic1 from '../assets/images/pic01.jpg';
@@ -29,17 +30,12 @@ const IndexPage = () => {
     return (
         <Layout>
             <section id="wrapper">
-                <div className="video-container">
-                    <div className="video-overlay">
-                        <img src={logo} alt="" />
-                        <h1>{content.section1.header}</h1>
-                        <h2>{content.section1.sub}</h2>
-                    </div>
-
-                    <main>
-                        <Vimeo vimeoLink={videos.header}></Vimeo>
-                    </main>
-                </div>
+                <VideoLandingSection
+                    logo={logo}
+                    header={content.section1.header}
+                    sub={content.section1.sub}
+                    videoLink={videos.header}
+                ></VideoLandingSection>
 
                 <section id="one" className="wrapper spotlight style1">
                     <div className="inner">

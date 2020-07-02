@@ -9,6 +9,15 @@ $hover-transition-speed: 0.1s;
 
 $greet-arrow-animation: fadeOutUp;
 
+/*
+------------------------------------------------------------------------------
+******************************************************************************
+** STYLING NOTE: 
+- The only changes you may want to make should be to above variables. For styling changes to specifi templates/layouts, adjust styling inside of '_sectionTemplates.scss' file. Each templates-specific styling is organized there. This includes sectionbackground variables as well based on automated class assignment. (see other doc for more details)
+******************************************************************************
+------------------------------------------------------------------------------
+*/
+
 @keyframes fadeOutUp {
     from {
         opacity: 1;
@@ -106,13 +115,13 @@ $greet-arrow-animation: fadeOutUp;
         color: black;
         border-radius: 2px;
         font-size: calc(#{$scroll-spy-font-size} + 0.15rem);
-        transition: $hover-transition-speed;
+        transition: calc(#{$hover-transition-speed} + 0.2s);
         padding: 0.7rem $scroll-spy-side-padding;
-        transition-timing-function: ease-out;
+        transition-timing-function: ease-in-out;
     }
 
     //  Main Section Styling
-    .sectionCont {
+    .sections-wrapper {
         height: 100vh;
         width: $container-width;
         overflow: hidden scroll;
@@ -120,9 +129,7 @@ $greet-arrow-animation: fadeOutUp;
         scroll-snap-type: y mandatory;
         background: rgb(29, 25, 96);
         background: linear-gradient(to right, #212d5a, #415083 55.88%, #6172ae);
-        .featureGreet {
-            background-image: url('../images/cam-bg.jpg');
-        }
+
         .section {
             background-size: cover;
             height: 100vh;
@@ -132,20 +139,6 @@ $greet-arrow-animation: fadeOutUp;
             align-items: center;
             justify-content: center;
             scroll-snap-align: start;
-
-            .downArrow {
-                width: 40px;
-                display: inline-block;
-                margin: 0rem auto;
-                animation-name: fadeOutUp;
-                transform-origin: center bottom;
-                animation-duration: 0.9s;
-                animation-iteration-count: infinite;
-                animation-direction: alternate;
-                opacity: 0.5;
-                position: absolute;
-                bottom: 20px;
-            }
 
             .topLine {
                 height: 15px;
@@ -166,7 +159,17 @@ $greet-arrow-animation: fadeOutUp;
                 text-align: justify;
             }
 
-            .greeting-card {
+            .section-content-wrapper {
+                width: 85%;
+                height: 75%;
+                min-height: 400px;
+                display: flex;
+                align-content: center;
+                align-items: center;
+                position: relative;
+            }
+
+            .greeting-section {
                 height: 100vh;
                 width: 100%;
                 padding: 15%;
@@ -186,36 +189,20 @@ $greet-arrow-animation: fadeOutUp;
                     z-index: 2;
                     position: relative;
                 }
-            }
-
-            .feature-card {
-                width: 85%;
-                height: 75%;
-                min-height: 400px;
-                display: flex;
-                align-content: center;
-                align-items: center;
-
-                .feature-txt {
-                    width: 40%;
-                    padding: 2rem 4rem 2rem 2rem;
-                }
-
-                .feature-vid {
-                    width: 60%;
-                    border-radius: 20px;
-
-                    video {
-                        border-radius: 5px !important;
-                        box-shadow: 4px 2px 18px #00000073 !important;
-                        width: 100%;
-                    }
+                .downArrow {
+                    width: 40px;
+                    display: inline-block;
+                    margin: 0rem auto;
+                    animation-name: fadeOutUp;
+                    transform-origin: center bottom;
+                    animation-duration: 0.9s;
+                    animation-iteration-count: infinite;
+                    animation-direction: alternate;
+                    opacity: 0.5;
+                    position: absolute;
+                    bottom: 20px;
                 }
             }
-
-            // .video-container {
-            //     width: 100vw !important;
-            // }
         }
 
         #footer {

@@ -1,7 +1,6 @@
 import React from 'react';
 
 const VimeoEmbed = props => {
-    // const link = props.vimeoLink
     return (
         <iframe
             src={props.vimeoLink}

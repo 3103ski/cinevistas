@@ -29,16 +29,16 @@ const SectionsContainer = props => {
         : `section-2`;
 
     return (
-        <div className="sectionCont" id="scrolling-container">
+        <div className="sections-wrapper" id="scrolling-container">
             <div className={landingSectionClasses()} id="section-0">
-                <div className="greeting-card">
+                <div className="greeting-section">
                     <div className="greeting-txt">
                         <div className="topLine"></div>
                         <h1>{greetHdr}</h1>
                         <p>{greetP}</p>
                     </div>
+                    <img className="downArrow" src={downIcon}></img>
                 </div>
-                <img className="downArrow" src={downIcon}></img>
             </div>
             {/* Children should be Section Component that iterates content packages from JSON */}
             {props.children}
