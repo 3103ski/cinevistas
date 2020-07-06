@@ -1,10 +1,22 @@
 // Framework / Library
 import React from 'react';
-import darkCheck from '../assets/images/darkCheck.png';
-import darkArrow from '../assets/images/darkRightArrow.png';
 
-import lightCheck from '../assets/images/whiteCheck.png';
-import lightArrow from '../assets/images/lightRightArrow.png';
+import darkCheck from '../assets/images/iconCheckDark.png';
+import lightCheck from '../assets/images/iconCheckLight.png';
+// import darkArrow from '../assets/images/iconRightArrowDark.png';
+// import lightArrow from '../assets/images/iconRightArrowLight.png';
+import darkGlobe from '../assets/images/iconGlobeDark.svg';
+import lightGlobe from '../assets/images/iconGlobeLight.svg';
+import lightQuestionMark from '../assets/images/iconQuestionMarkLight.svg';
+import darkQuestionMark from '../assets/images/iconQuestionMarkDark.svg';
+import lightBinoculars from '../assets/images/iconBinocularsLight.svg';
+import darkBinoculars from '../assets/images/iconBinocularsDark.svg';
+
+// components
+
+import IconButton from '../components/IconButton';
+
+// import bodyMovin from 'bodymovin';
 /**
  *
  * This template intention is to have a full screen high res image in the background and then a card with some text. You can let the card position at default, or you can add the customClass 'full' to the JSON object then position card with left and top margin in '_sectionTemplate.scss' (see that file for more instructions)
@@ -28,14 +40,20 @@ const SectionTemplateTwo = props => {
         fontWeight: 'bold',
     };
 
+    const globe = d.filter == 'dark' ? lightGlobe : darkGlobe;
     const check = d.filter == 'dark' ? lightCheck : darkCheck;
-    const arrow = d.filter == 'dark' ? lightArrow : darkArrow;
+    const qMark = d.filter == 'dark' ? lightQuestionMark : darkQuestionMark;
+    const binoculars = d.filter == 'dark' ? lightBinoculars : darkBinoculars;
 
     const makeBoxUL = list => {
         return list.map(li => (
             <li>
-                <img src={check} alt="check" />
-                {li.liText}
+                <IconButton
+                    listItem
+                    smallIcon
+                    icon={check}
+                    text={li.liText}
+                ></IconButton>
             </li>
         ));
     };
@@ -46,12 +64,12 @@ const SectionTemplateTwo = props => {
     ) : (
         <h1 style={errorTextStyle}>title_missing</h1>
     );
+
     const mainBoxText = d.text ? (
         <p>{d.text}</p>
     ) : (
         <p style={errorTextStyle}>
-            text_missing: check the data object that fed this template component
-            and ensure it has a key named 'text' with text value.
+            text_missing: check data fed to tempalte component
         </p>
     );
 
@@ -60,24 +78,26 @@ const SectionTemplateTwo = props => {
     ) : (
         <p style={errorTextStyle}>title_missing: add 'listBoxTitle'</p>
     );
+
     const listBoxList = d.listBoxList ? (
         <ul>
             {makeBoxUL(d.listBoxList)}
-            <a
-                className="visit-btn-container"
-                href={d.projectUrl}
-                target="_blank"
-            >
-                <p>See Tour</p>
-                <img className="click-out-icon" src={arrow} alt="arrrow" />
-            </a>
+            <div className="visit-btn-container">
+                <IconButton
+                    iconRight
+                    text="Learn About Features"
+                    link="/Features"
+                    icon={qMark}
+                    alt="Question Mark"
+                ></IconButton>
+            </div>
         </ul>
     ) : (
         <p style={errorTextStyle}>
-            text_missing: check the data object that fed this template component
-            and ensure it has a key named 'listBoxList' with text value.
+            list_missing; check data feeding section template.
         </p>
     );
+    console.log(d);
 
     return (
         <div className={templateClasses}>
@@ -86,18 +106,22 @@ const SectionTemplateTwo = props => {
                     <div className="topLine"></div>
                     {mainBoxTitle}
                     {mainBoxText}
-                    <a
-                        className="visit-btn-container"
-                        href={d.clientUrl}
-                        target="_blank"
-                    >
-                        <p>Visit Website</p>
-                        <img
-                            className="click-out-icon"
-                            src={arrow}
-                            alt="arrrow"
-                        />
-                    </a>
+                    <div className="horizontalBtnGroup">
+                        <IconButton
+                            icon={globe}
+                            alt="globe"
+                            blank
+                            text="Visit Website"
+                            link={d.clientUrl}
+                        ></IconButton>
+                        <IconButton
+                            icon={binoculars}
+                            alt="See Tour"
+                            blank
+                            text="See Tour"
+                            link={d.projectUrl}
+                        ></IconButton>
+                    </div>
                 </div>
                 <div className="template-two-card card card2">
                     {listBoxTitle}

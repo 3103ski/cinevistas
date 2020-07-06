@@ -141,7 +141,7 @@ const IndexPage = () => {
                                 </a>
                             </article>
 
-                            <article>
+                            {/* <article>
                                 <a href="/#" className="image">
                                     <img src={pic6} alt="" />
                                 </a>
@@ -168,11 +168,11 @@ const IndexPage = () => {
                                 <a href="/#" className="special">
                                     Learn more
                                 </a>
-                            </article>
+                            </article> */}
                         </section>
                         <ul className="actions">
                             <li>
-                                <a href="/#" className="button">
+                                <a href="/Portfolio" className="button">
                                     Browse All
                                 </a>
                             </li>
