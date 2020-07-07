@@ -186,7 +186,7 @@ const IndexPage = () => {
                         <ul className="actions">
                             <li>
                                 <a href="/Portfolio" className="button">
-                                    Browse All
+                                    see more tours
                                 </a>
                             </li>
                         </ul>

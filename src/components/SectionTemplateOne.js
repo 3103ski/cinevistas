@@ -9,12 +9,12 @@ import IconButton from '../components/IconButton';
 const SectionWithVidTemplate = props => {
     const d = props.contentData ? props.contentData : {};
     const sectionClasses = d.customClass
-        ? `section-content-wrapper ${d.customClass}`
-        : `section-content-wrapper`;
+        ? `section-content-wrapper ${d.customClass} wider`
+        : `section-content-wrapper wider`;
     // console.log(d);
     return (
         <div className={sectionClasses}>
-            <div className="template-one-card card">
+            <div className="template-one-card">
                 <div className="topLine"></div>
                 <h1>{d.title}</h1>
                 <p style={{ marginBottom: '.75rem' }}>{d.text}</p>

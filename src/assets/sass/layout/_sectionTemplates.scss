@@ -130,16 +130,21 @@ $bg-portfolio-greet: url('../images/portfolio-greet-bg.jpg');
 -----------------------------------------
 */
 
+.wider {
+    width: 80% !important;
+}
+
 .twoButtons {
     display: flex;
 }
 
 .template-one-card {
     padding: 0 2rem 0 0;
+    width: 30%;
 }
 
 .template-one-video {
-    width: 50%;
+    width: 70%;
     border-radius: 20px;
     margin: 0 auto;
     video {

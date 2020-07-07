@@ -9,7 +9,7 @@
             "tourHotspots": {
                 "text": "Hot spots allow you to have clickable areas in your tour. These clickable areas can have any icon or picture you’d like. They enable customers to click on a product to display a pop that gives them information, pictures and even video about that particular product. This is useful if you’d like your customers to shop within your tour. Hotspots can also open up a photo album, video or an external link to your website or anywhere else you choose.",
                 "title": "tour hotspots",
-                "vidUrl": "https://player.vimeo.com/video/433876787?background=1",
+                "vidUrl": "https://player.vimeo.com/video/433868601?background=1",
                 "template": "one"
             },
             "audioVideo": {
@@ -30,12 +30,6 @@
                 "vidUrl": "https://player.vimeo.com/video/436236068?background=1",
                 "template": "one"
             },
-            "videoHotspots360": {
-                "text": "Hotspots can also be embedded in 360 video! Useful if we shoot a 360 video for your location. As the guest looks around during the video playing they’ll see onscreen icons that allows them to click and get more information about it.",
-                "title": "360 video hotspots",
-                "vidUrl": "https://player.vimeo.com/video/433868601?background=1",
-                "template": "one"
-            },
             "fullyBranded": {
                 "text": "Your Tour will come fully branded with your company logo, colors, website link and contact information right inside of it.",
                 "title": "fully branded",
@@ -51,7 +45,7 @@
             "embedExternalContent": {
                 "text": "We can embed a contact form, purchase link, youtube video, google map, and more directly inside your tour. This is the most convenient way to allow your customers to get a full experience right within your tour and interact with your business almost as if they were actually there in person.",
                 "title": "embed external content",
-                "vidUrl": "https://player.vimeo.com/video/436236131?background=1",
+                "vidUrl": "https://player.vimeo.com/video/436253220?background=1",
                 "template": "one"
             },
             "photoAlbum": {
