@@ -6,12 +6,6 @@
             "text": "We also can embed a complete photo album within your tour. Let’s say you’d like us to shoot a few picture for a certain product you offer. Customers can click on that product and see all of the high quality photos of that product."
         },
         "features": {
-            "virtual360Tours": {
-                "text": "Allow your customers to take a completely interactive tour through your entire location. They can browse and purchase products, learn about services, and get a feel what your place feels like. Our Vista Tours are fully immersive and can contain any and all information about your business or location as you'd like.",
-                "title": "virtual 360 tours",
-                "vidUrl": "https://player.vimeo.com/video/433868601?background=1",
-                "template": "one"
-            },
             "tourHotspots": {
                 "text": "Hot spots allow you to have clickable areas in your tour. These clickable areas can have any icon or picture you’d like. They enable customers to click on a product to display a pop that gives them information, pictures and even video about that particular product. This is useful if you’d like your customers to shop within your tour. Hotspots can also open up a photo album, video or an external link to your website or anywhere else you choose.",
                 "title": "tour hotspots",
@@ -24,16 +18,16 @@
                 "vidUrl": "https://player.vimeo.com/video/433868601?background=1",
                 "template": "one"
             },
-            "timelapse360": {
-                "text": "We can create 360 timelapse videos.",
-                "title": "360 timelapse",
-                "vidUrl": "https://player.vimeo.com/video/433868601?background=1",
+            "aerials360": {
+                "text": "Allow your customers to take a completely interactive tour through your entire location. They can browse and purchase products, learn about services, and get a feel what your place feels like. Our Vista Tours are fully immersive and can contain any and all information about your business or location as you'd like.",
+                "title": "360 Aerials",
+                "vidUrl": "https://player.vimeo.com/video/436236106?background=1",
                 "template": "one"
             },
             "video360": {
                 "text": "Want a video tour of your location? How about a 360 Video that customers can use VR Goggles or click to move the camera angle as the video plays? We can also embed this 360 video within your tour",
                 "title": "360 video",
-                "vidUrl": "https://player.vimeo.com/video/433868601?background=1",
+                "vidUrl": "https://player.vimeo.com/video/436236068?background=1",
                 "template": "one"
             },
             "videoHotspots360": {
@@ -51,25 +45,19 @@
             "vRReady": {
                 "text": "Our tours are compatible with most VR Goggles like the Oculus Rift and many others.",
                 "title": "vr ready",
-                "vidUrl": "https://player.vimeo.com/video/433868601?background=1",
-                "template": "one"
-            },
-            "offlineOrHosted": {
-                "text": "Want your tour delivered to you on a USB Stick or downloadable? We can send your tour directly to you so you can send it wherever you’d like, or just to have a backup copy. You can also have us host your tour so all you have to do is share a link. This will also allow you to embed your tour directly on your website.",
-                "title": "offline or hosted",
-                "vidUrl": "https://player.vimeo.com/video/433868601?background=1",
+                "vidUrl": "https://player.vimeo.com/video/436235737?background=1",
                 "template": "one"
             },
             "embedExternalContent": {
                 "text": "We can embed a contact form, purchase link, youtube video, google map, and more directly inside your tour. This is the most convenient way to allow your customers to get a full experience right within your tour and interact with your business almost as if they were actually there in person.",
                 "title": "embed external content",
-                "vidUrl": "https://player.vimeo.com/video/433868601?background=1",
+                "vidUrl": "https://player.vimeo.com/video/436236131?background=1",
                 "template": "one"
             },
             "photoAlbum": {
                 "text": "We also can embed a complete photo album within your tour. Let’s say you’d like us to shoot a few picture for a certain product you offer. Customers can click on that product and see all of the high quality photos of that product.",
                 "title": "photo album",
-                "vidUrl": "https://player.vimeo.com/video/433868601?background=1",
+                "vidUrl": "https://player.vimeo.com/video/436236172?background=1",
                 "template": "one"
             },
             "worksOnAllDevices": {
@@ -81,7 +69,7 @@
             "googleStreetView": {
                 "text": "Your tour can be published directly to Google Street View. integrated with the official information of your Google listing (i.e. phone, address and reviews). Virtual Tours on the point of first contact, which Google tends to be, are the ultimate tool to familiarize the customer with a business. Plus, they also have proven to positively impact indexation and visibility on search platforms, helping you show up among the first.",
                 "title": "google street view",
-                "vidUrl": "https://player.vimeo.com/video/433868601?background=1",
+                "vidUrl": "https://player.vimeo.com/video/436236153?background=1",
                 "template": "one"
             }
         }

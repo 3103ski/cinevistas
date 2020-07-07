@@ -11,7 +11,7 @@ const SectionWithVidTemplate = props => {
     const sectionClasses = d.customClass
         ? `section-content-wrapper ${d.customClass}`
         : `section-content-wrapper`;
-    console.log(d);
+    // console.log(d);
     return (
         <div className={sectionClasses}>
             <div className="template-one-card card">

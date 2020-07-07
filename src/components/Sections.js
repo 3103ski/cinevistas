@@ -12,7 +12,7 @@ const Sections = props => {
         let data = sectionObject[1];
         let sectionName = sectionObject[0];
         let sectionClasses = `section ${sectionName}`;
-        console.log(data);
+        // console.log(data);
         switch (data.template) {
             case 'one':
                 return (
