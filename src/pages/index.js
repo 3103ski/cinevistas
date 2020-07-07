@@ -7,9 +7,9 @@ import Layout from '../components/Layout';
 import VideoLandingSection from '../components/VideoLanding';
 
 // Circle Images
-import pic1 from '../assets/images/pic01.jpg';
-import pic2 from '../assets/images/pic02.jpg';
-import pic3 from '../assets/images/pic03.jpg';
+import pic1 from '../assets/images/img-team-square.jpg';
+import pic2 from '../assets/images/img-impress-square.jpg';
+import pic3 from '../assets/images/img-immersive-square.jpg';
 
 // Article Image
 import pic4 from '../assets/images/laser-eye-thumb.png';
@@ -39,9 +39,9 @@ const IndexPage = () => {
 
                 <section id="one" className="wrapper spotlight style1">
                     <div className="inner">
-                        <a href="/#" className="image">
+                        <div className="image">
                             <img src={pic1} alt="" />
-                        </a>
+                        </div>
                         <div className="content">
                             <h2 className="major">Work With A Vision</h2>
                             <p>
@@ -58,9 +58,9 @@ const IndexPage = () => {
 
                 <section id="two" className="wrapper alt spotlight style2">
                     <div className="inner">
-                        <a href="/#" className="image">
+                        <div className="image">
                             <img src={pic2} alt="" />
-                        </a>
+                        </div>
                         <div className="content">
                             <h2 className="major">Captivate Your Clients</h2>
                             <p>
@@ -74,9 +74,9 @@ const IndexPage = () => {
 
                 <section id="three" className="wrapper spotlight style3">
                     <div className="inner">
-                        <a href="/#" className="image">
+                        <div className="image">
                             <img src={pic3} alt="" />
-                        </a>
+                        </div>
                         <div className="content">
                             <h2 className="major">An Immersive Experience </h2>
                             <p>
@@ -98,15 +98,28 @@ const IndexPage = () => {
 
                 <section id="four" className="wrapper alt style1">
                     <div className="inner">
-                        <h2 className="major">Feature Tours</h2>
+                        <h2 className="major">take a tour</h2>
                         <p>
-                            Don't take our word for it. Explore some of the work
-                            we've done and explore the potential of what we
-                            bring to the table
+                            Check out the great work we put together for
+                            Champion Porche's showroom. you can explore this
+                            tour right here on our homepage or head to our
+                            portfolio to visit this tour and more.
                         </p>
+                        <div className="iframe-style-container">
+                            <iframe
+                                name="Framename"
+                                src="http://cinevistatours.com/champion-porsche/"
+                                width="400"
+                                height="200"
+                                frameborder="0"
+                                scrolling="auto"
+                                class="frame-area"
+                            ></iframe>
+                            <div className="iframe-overlay"></div>
+                        </div>
 
                         {/* Feature Tours */}
-                        <section className="features">
+                        {/* <section className="features">
                             <article>
                                 <a href="/#" className="image">
                                     <img src={pic4} alt="" />
@@ -141,7 +154,7 @@ const IndexPage = () => {
                                 </a>
                             </article>
 
-                            {/* <article>
+                            <article>
                                 <a href="/#" className="image">
                                     <img src={pic6} alt="" />
                                 </a>
@@ -168,8 +181,8 @@ const IndexPage = () => {
                                 <a href="/#" className="special">
                                     Learn more
                                 </a>
-                            </article> */}
-                        </section>
+                            </article>
+                        </section> */}
                         <ul className="actions">
                             <li>
                                 <a href="/Portfolio" className="button">

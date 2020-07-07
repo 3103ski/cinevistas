@@ -87,3 +87,19 @@ iframe {
 .wrapper.spotlight {
     z-index: 3;
 }
+
+.iframe-style-container {
+    .frame-area {
+        display: block;
+        width: 100%; /* RESPONSIVE WIDTH */
+        max-width: 800px;
+        height: 500px;
+        overflow: hidden; /* EDIT TO hidden FOR NO SCROLLBAR */
+        // border: #999999 1px solid;
+        // border-radius: 20px;
+        margin: 0px auto 40px auto;
+        padding: 0px;
+        z-index: 100;
+        position: relative;
+    }
+}
