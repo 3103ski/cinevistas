@@ -11,12 +11,6 @@ import pic1 from '../assets/images/img-team-square.jpg';
 import pic2 from '../assets/images/img-impress-square.jpg';
 import pic3 from '../assets/images/img-immersive-square.jpg';
 
-// Article Image
-import pic4 from '../assets/images/laser-eye-thumb.png';
-import pic5 from '../assets/images/champ-porsche-thumb.png';
-import pic6 from '../assets/images/champ-motor-thumb.png';
-import pic7 from '../assets/images/pic07.jpg';
-
 // Company Assets
 import logo from '../assets/images/color-cinevistas.png';
 
@@ -120,54 +114,6 @@ const IndexPage = () => {
 
                         {/* Feature Tours */}
                         {/* <section className="features">
-                            <article>
-                                <a href="/#" className="image">
-                                    <img src={pic4} alt="" />
-                                </a>
-                                <h3 className="major">
-                                    MILLENNIUM LASER EYE CENTER
-                                </h3>
-                                <p>
-                                    Dr. Cory M. Lessner and the professional
-                                    Team at Millennium Laser Eye Centers are
-                                    recognized as the LASIK Leader in the United
-                                    States.
-                                </p>
-                                <a href="/#" className="special">
-                                    Learn more
-                                </a>
-                            </article>
-
-                            <article>
-                                <a href="/#" className="image">
-                                    <img src={pic5} alt="" />
-                                </a>
-                                <h3 className="major">CHAMPION PORSCHE</h3>
-                                <p>
-                                    With more than 85 years of designing and
-                                    racing experience, the German manufacturer
-                                    has become an icon in the automotive
-                                    industry.
-                                </p>
-                                <a href="/#" className="special">
-                                    Learn more
-                                </a>
-                            </article>
-
-                            <article>
-                                <a href="/#" className="image">
-                                    <img src={pic6} alt="" />
-                                </a>
-                                <h3 className="major">CHAMPION MOTORSPORT</h3>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur
-                                    adipiscing vehicula id nulla dignissim
-                                    dapibus ultrices.
-                                </p>
-                                <a href="/Features" className="special">
-                                    Learn more
-                                </a>
-                            </article>
                             <article>
                                 <a href="/#" className="image">
                                     <img src={pic7} alt="" />

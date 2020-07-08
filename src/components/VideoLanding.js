@@ -15,13 +15,12 @@ const VideoLanding = props => {
     ];
     return (
         <div className="video-container">
+            <main>{video}</main>
             <div className="video-overlay">
                 {logo}
                 {header}
                 {sub}
             </div>
-
-            <main>{video}</main>
         </div>
     );
 };
