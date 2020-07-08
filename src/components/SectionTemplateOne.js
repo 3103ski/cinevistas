@@ -25,9 +25,7 @@ const SectionWithVidTemplate = props => {
                         borderTop: 'solid 1px white',
                     }}
                 >
-                    Mollit id dolore qui esse laboris officia ut tempor commodo
-                    duis. Magna dolor excepteur reprehenderit officia est et
-                    esse officia non aliquip elit reprehenderit.
+                    {d.textTwo}
                 </p>
                 <div className="twoButtons">
                     <IconButton

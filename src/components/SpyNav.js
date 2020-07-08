@@ -2,6 +2,9 @@ import React from 'react';
 import Scrollspy from 'react-scrollspy';
 
 const SpyNav = props => {
+    const contactSectionRef = props.features
+        ? `#section-${props.features.length + 1}`
+        : `#section-2`;
     return (
         <div className="navUl">
             <Scrollspy
@@ -25,7 +28,7 @@ const SpyNav = props => {
                     );
                 })}
                 <li>
-                    <a className="spyNav" href="#section-14">
+                    <a className="spyNav" href={contactSectionRef}>
                         CONTACT US
                     </a>
                 </li>

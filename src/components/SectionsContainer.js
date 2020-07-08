@@ -2,7 +2,6 @@ import React from 'react';
 import Layout from '../components/Layout';
 import downIcon from '../assets/images/down-arrow.svg';
 
-// TO
 const SectionsContainer = props => {
     const greetings = props.pageContent.greetings
         ? props.pageContent.greetings
@@ -27,6 +26,8 @@ const SectionsContainer = props => {
     const contactSectionId = props.sectionCount
         ? `section-${props.sectionCount + 1}`
         : `section-2`;
+
+    console.log('this is the section count', contactSectionId);
 
     return (
         <div className="sections-wrapper" id="scrolling-container">
