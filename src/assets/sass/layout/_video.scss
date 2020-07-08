@@ -105,6 +105,10 @@ iframe {
     }
 }
 
+.spyLinkMobile.spyNav {
+    display: none !important;
+}
+
 @media screen and (max-width: 770px) {
     .video-overlay {
         position: relative !important;

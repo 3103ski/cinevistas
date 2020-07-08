@@ -1,10 +1,15 @@
 $accent-color-one: #a1286bbd;
+
 $scroll-spy-width: 18rem;
+$scroll-spy-width-mobile: 3rem;
+
 $scroll-spy-side-padding: 9%;
 $scroll-spy-font-size: 1.25rem;
 $scroll-spy-letter-space: 0.05rem;
 
 $container-width: calc(100vw - #{$scroll-spy-width});
+$container-width-mobile: calc(100vw - #{$scroll-spy-width-mobile});
+
 $hover-transition-speed: 0.1s;
 
 $greet-arrow-animation: fadeOutUp;
@@ -204,5 +209,45 @@ $greet-arrow-animation: fadeOutUp;
             height: 100vh !important;
             width: 100vw !important;
         }
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .spyLi {
+        width: 80% !important;
+        background-color: grey;
+        min-height: 15px;
+        border-radius: 4px;
+        margin-bottom: 3px !important;
+    }
+    .is-current a {
+        background-color: #a1286bbd !important;
+    }
+    .spyNav {
+        border-radius: 4px !important;
+    }
+    .scrollSpyPage .navUl ul {
+        width: $scroll-spy-width-mobile !important;
+        .spyLinkFull.spyNav {
+            display: none !important;
+        }
+        .spyLinkMobile.spyNav {
+            display: block !important;
+        }
+    }
+
+    .sections-wrapper {
+        width: $container-width-mobile !important;
+    }
+
+    .navContactMobile img {
+        width: 1.8rem;
+        margin: 20px auto;
+    }
+
+    .navTitle h1,
+    .scrollSpyPage .navTitle .navDivider,
+    .navContactFull {
+        display: none !important;
     }
 }

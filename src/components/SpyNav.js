@@ -1,6 +1,8 @@
 import React from 'react';
 import Scrollspy from 'react-scrollspy';
 
+import contactIcon from '../assets/images/iconContactLight.svg';
+
 const SpyNav = props => {
     const contactSectionRef = props.features
         ? `#section-${props.features.length + 1}`
@@ -20,16 +22,28 @@ const SpyNav = props => {
                 {props.features.map((feature, i) => {
                     let id = `#section-${i + 1}`;
                     return (
-                        <li key={i}>
-                            <a className="spyNav" href={id}>
+                        <li className="spyLi" key={i}>
+                            <a className="spyLinkFull spyNav" href={id}>
                                 {feature[1].title}
+                            </a>
+                            <a className="spyLinkMobile spyNav" href={id}>
+                                {/* {feature[1].title} */}
                             </a>
                         </li>
                     );
                 })}
                 <li>
-                    <a className="spyNav" href={contactSectionRef}>
+                    <a
+                        className="spyNav navContactFull"
+                        href={contactSectionRef}
+                    >
                         CONTACT US
+                    </a>
+                    <a
+                        className="spyNav navContactMobile"
+                        href={contactSectionRef}
+                    >
+                        <img src={contactIcon} alt="" />
                     </a>
                 </li>
             </Scrollspy>
