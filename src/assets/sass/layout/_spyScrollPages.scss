@@ -250,4 +250,17 @@ $greet-arrow-animation: fadeOutUp;
     .navContactFull {
         display: none !important;
     }
+
+    .scrollSpyPage .sections-wrapper .section .section-content-wrapper {
+        width: 100% !important;
+        height: 100%;
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 3rem;
+    }
+    .template-one-card {
+        padding: 0;
+        width: 90%;
+        margin: 0px auto !important;
+    }
 }
