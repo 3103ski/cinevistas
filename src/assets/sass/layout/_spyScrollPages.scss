@@ -220,12 +220,15 @@ $greet-arrow-animation: fadeOutUp;
         border-radius: 4px;
         margin-bottom: 3px !important;
     }
+
     .is-current a {
         background-color: #a1286bbd !important;
     }
+
     .spyNav {
         border-radius: 4px !important;
     }
+
     .scrollSpyPage .navUl ul {
         width: $scroll-spy-width-mobile !important;
         .spyLinkFull.spyNav {
@@ -255,25 +258,40 @@ $greet-arrow-animation: fadeOutUp;
         width: 100% !important;
         height: 100%;
         flex-direction: column;
-        // justify-content: center;
-        // padding-top: 3rem;
     }
+
     .template-one-card {
         padding: 0;
         width: 90%;
         margin: 0px auto !important;
     }
+
     .scrollSpyPage .sections-wrapper .section h1 {
         font-size: 1.6rem;
         margin: 0.5rem 0 !important;
     }
+
     .scrollSpyPage .sections-wrapper .section p {
         font-size: 0.9rem;
         margin: 0;
     }
+
+    .template-two-card.card {
+        width: 100% !important;
+    }
+
+    .info-cards-wrapper {
+        padding: 0px;
+    }
+
+    .card2 .topLine {
+        margin-top: 0 !important;
+    }
+
     .scrollSpyPage .sections-wrapper .section .topLine {
         margin-top: 7.3rem;
     }
+
     .scrollSpyPage .sections-wrapper .section .greeting-section {
         align-items: unset;
     }
