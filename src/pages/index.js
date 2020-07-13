@@ -95,7 +95,7 @@ const IndexPage = () => {
                         <h2 className="major">take a tour</h2>
                         <p>
                             Check out the great work we put together for
-                            Champion Porche's showroom. you can explore this
+                            Champion Porsche's showroom. you can explore this
                             tour right here on our homepage or head to our
                             portfolio to visit this tour and more.
                         </p>
