@@ -106,6 +106,9 @@ $greet-arrow-animation: fadeOutUp;
             transition-timing-function: ease-out;
             padding-left: calc(#{$scroll-spy-side-padding} - 0.2rem);
         }
+        img {
+            display: none;
+        }
     }
 
     .is-current a {
@@ -227,6 +230,9 @@ $greet-arrow-animation: fadeOutUp;
 
     .spyNav {
         border-radius: 4px !important;
+        img {
+            display: inline-block;
+        }
     }
 
     .scrollSpyPage .navUl ul {
