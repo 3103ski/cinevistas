@@ -11,8 +11,29 @@ export default function Footer() {
           egestas, purus ipsum consequat orci, sit amet lobortis lorem lacus in
           tellus. Sed ac elementum arcu. Quisque placerat auctor laoreet. */}
                 </p>
-                <form method="post" action="/#">
+                <form
+                    name="contact"
+                    netlify
+                    netlify-honeypot="bot-field"
+                    hidden
+                >
+                    <input type="text" name="name" />
+                    <input type="email" name="email" />
+                    <textarea name="message"></textarea>
+                </form>
+                <form
+                    method="post"
+                    data-netlify="true"
+                    name="contact-cinevista"
+                >
                     <div className="fields">
+                        <div className="field">
+                            <input
+                                type="hidden"
+                                name="form-name"
+                                value="contact-cinevista"
+                            />
+                        </div>
                         <div className="field">
                             <label htmlFor="name">Name</label>
                             <input type="text" name="name" id="name" />

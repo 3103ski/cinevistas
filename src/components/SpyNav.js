@@ -39,12 +39,12 @@ const SpyNav = props => {
                     >
                         CONTACT US
                     </a>
-                    <a
+                    {/* <a
                         className="spyNav navContactMobile"
                         href={contactSectionRef}
                     >
                         <img src={contactIcon} alt="" />
-                    </a>
+                    </a> */}
                 </li>
             </Scrollspy>
         </div>
